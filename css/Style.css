@@ -70,12 +70,18 @@ ul{
     top:0%;
     width: 90%;
     cursor:pointer; 
+    display: none;
 }
 
 .nav .toggle-collapse .toggle-icons{
     display: flex;
     justify-content: flex-end;
     padding: 1.7rem 0;
+}
+
+.nav .toggle-collapse .toggle-icons i{
+    font-size: 1.4rem;
+    color: var(--text-gray);
 }
 
 /* จัดระเบียบลิงค์กึ่งกลาง */
@@ -128,6 +134,10 @@ ul{
 @media only screen and (max-width: 750px){
     .nav .nav-menu{
         flex-direction: column;
+    }
+/* ทำให้เครื่องหมาย สามขีด ปรากฏเมื่อย่อหน้าจอ */
+    .nav .toggle-collapse{
+        display: inline;
     }
 }
 
